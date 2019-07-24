@@ -11,7 +11,7 @@ import sys
 
 engine = pyttsx3.init('sapi5')
 
-client = wolframalpha.Client('2XL6U8-L32WT65UAV')
+client = wolframalpha.Client('add your wolframalpha id')
 
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[len(voices)-1].id)
@@ -34,7 +34,7 @@ def greetMe():
 
 greetMe()
 
-speak('Hello Sir, I am your digital assistant LARVIS the Lady Jarvis!')
+speak('Hello Sir, I am your digital assistant Jarvis!')
 speak('How may I help you?')
 
 
@@ -50,7 +50,7 @@ def myCommand():
         print('User: ' + query + '\n')
         
     except sr.UnknownValueError:
-        speak('Sorry sir! I didn\'t get that! Try typing the command!')
+        speak('Sorry sir! I didn't get that! Try typing the command!')
         query = str(input('Command: '))
 
     return query
@@ -113,7 +113,7 @@ if __name__ == '__main__':
             sys.exit()
                                     
         elif 'play music' in query:
-            music_folder = ''
+            music_folder = 'E:\New songs'
             music = ['Doorie', 'Ehsaas', 'Hum Kis Galli Ja Rahe Hain', 'Kuch Is Tarah']
             random_music = music_folder + random.choice(music) + '.mp3'
             os.system(random_music)
