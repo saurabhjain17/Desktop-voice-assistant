@@ -70,6 +70,9 @@ if __name__ == '__main__':
         elif 'open google' in query:
             speak('okay')
             webbrowser.open('www.google.co.in')
+        elif 'open amazon' in query:
+            speak('okay')
+            webbrowser.open('www.amazon.com')
 
         elif 'open gmail' in query:
             speak('okay')
